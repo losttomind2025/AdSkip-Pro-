@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AdSkip Pro</string>
+    <string name="accessibility_service_label">AdSkip Pro Auto-Skipper</string>
+    <string name="accessibility_service_description">Automatically detects and clicks Skip Ad and Close buttons across video players, streaming apps, browsers, and mobile games to save your time.</string>
+</resources>

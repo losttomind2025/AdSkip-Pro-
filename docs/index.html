@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdSkip Pro - Auto Ad Skipper & Ad Blocker for Android | डाउनलोड करें</title>
+    <meta name="description" content="AdSkip Pro Android ऐप डाउनलोड करें। यूट्यूब और सभी ऐप्स के विज्ञापनों को अपने आप स्किप करें। 100% मुफ़्त और सुरक्षित।">
+    <meta name="keywords" content="AdSkip Pro, Auto Ad Skipper, Android Ad Blocker, Skip YouTube Ads Automatic, Download AdSkip APK">
+    <meta name="author" content="AdSkip Pro Team">
+
+    <!-- Open Graph for Google, WhatsApp & Social Sharing -->
+    <meta property="og:title" content="AdSkip Pro - ऑटो विज्ञापन स्किप और शील्ड">
+    <meta property="og:description" content="यूट्यूब और सभी ऐप्स के वीडियो ऐड्स को ऑटोमेटिक स्किप करें। डायरेक्ट APK डाउनलोड करें।">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ahtishammustafa/adskip-pro/main/app/src/main/res/drawable/ic_app_icon_1793133493865.jpg">
+
+    <style>
+        :root {
+            --bg: #0B0F19;
+            --surface: #131B2E;
+            --border: #2E3A52;
+            --primary: #10B981;
+            --primary-glow: rgba(16, 185, 129, 0.3);
+            --cyan: #06B6D4;
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 860px;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo-badge {
+            width: 88px;
+            height: 88px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(6, 182, 212, 0.2));
+            border: 2px solid var(--primary);
+            box-shadow: 0 0 30px var(--primary-glow);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-badge svg {
+            width: 48px;
+            height: 48px;
+            fill: var(--primary);
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            background: linear-gradient(to right, #10B981, #06B6D4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            line-height: 1.5;
+        }
+
+        .cta-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 50px;
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #10B981, #059669);
+            color: #FFFFFF;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 16px 36px;
+            border-radius: 16px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+            transition: all 0.2s ease;
+        }
+
+        .btn-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(16, 185, 129, 0.6);
+        }
+
+        .meta-tag {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+        }
+
+        .card-icon {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .guide-box {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .guide-box h2 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: var(--cyan);
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .step-num {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--primary);
+            font-weight: bold;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-badge">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 14l-4-4 1.41-1.41L10 12.17l6.59-6.59L18 7l-8 8z"/>
+                </svg>
+            </div>
+            <h1>AdSkip Pro</h1>
+            <p class="tagline">मोबाइल पर किसी भी ऐप या यूट्यूब का विज्ञापन आते ही ऑटोमेटिक स्किप करें। नो ऐड्स, नो डिस्टर्बेंस!</p>
+            
+            <div class="cta-box">
+                <a href="https://github.com/ahtishammustafa/adskip-pro/releases/latest" class="btn-download" target="_blank">
+                    ⬇️ Download APK (Android)
+                </a>
+                <span class="meta-tag">Version 1.0 • Android 7.0+ • 100% Free & Safe</span>
+            </div>
+        </header>
+
+        <section class="grid">
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>ऑटो 'Skip Ad' क्लिक</h3>
+                <p>यूट्यूब और अन्य वीडियो ऐप्स में 'Skip Ad' बटन आते ही यह 0ms में अपने आप क्लिक कर देता है।</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔇</div>
+                <h3>स्मार्ट ऑडियो म्यूट</h3>
+                <p>अनस्किपेबल वीडियो ऐड्स के दौरान मोबाइल आवाज़ अपने आप म्यूट हो जाती है और ऐड खत्म होते ही बहाल हो जाती है।</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🛡️</div>
+                <h3>सिस्टम-वाइड DNS शील्ड</h3>
+                <p>ब्राउज़र और ऐप्स में आने वाले अनचाहे बैनर विज्ञापनों को रोकने के लिए वन-टैप DNS प्रोटेक्शन।</p>
+            </div>
+        </section>
+
+        <section class="guide-box">
+            <h2>मोबाइल में कैसे इंस्टॉल करें?</h2>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>ऊपर <strong>"Download APK"</strong> बटन पर क्लिक करके अपने मोबाइल में ऐप की <code>.apk</code> फ़ाइल डाउनलोड करें।</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>डाउनलोड पूरा होने पर फ़ाइल पर टैप करें और <strong>Install</strong> दबाएं (यदि 'Unknown sources' पूछे तो Allow करें)।</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>ऐप खोलें और <strong>"सेटिंग्स में ऑन करें"</strong> पर टैप करके Accessibility चालू करें।</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>बस! अब मोबाइल में किसी भी ऐप पर आने वाले विज्ञापन अपने आप स्किप हो जाएंगे।</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 AdSkip Pro. All rights reserved. Open source on GitHub.</p>
+    </footer>
+
+</body>
+</html>

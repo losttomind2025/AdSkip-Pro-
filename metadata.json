@@ -1,0 +1,6 @@
+{
+  "name": "AdSkip Pro",
+  "description": "Auto skip ads across apps and browsers with smart audio muting and ad shield protection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
